@@ -43,4 +43,4 @@ function postTweets() {
   });
 }
 
-setInterval(postTweets, 60 * 30);
+setInterval(postTweets, 60 * 10);
