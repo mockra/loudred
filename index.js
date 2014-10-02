@@ -9,7 +9,7 @@ mongoose.connection.on('error', function() {
   console.error('✗ MongoDB Connection Error. Please make sure MongoDB is running.');
 });
 
-var subreddits = ['globaloffensive', 'games', 'destinythegame', 'programming',
+var subreddits = ['globaloffensive', 'games', 'programming',
                   'node', 'ruby', 'rails', 'javascript'];
 
 function postTweet(post) {
