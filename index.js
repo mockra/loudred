@@ -12,7 +12,7 @@ mongoose.connection.on('error', function() {
 var subreddits = ['globaloffensive', 'games', 'programming',
                   'node', 'ruby', 'rails', 'javascript'];
 
-function postTweet(post) {
+function postTweet(sub, post) {
   Post.findOne({ name: post.name }, function(err, record) {
     if (!record) {
       var postRecord = new Post({
@@ -22,7 +22,7 @@ function postTweet(post) {
       });
 
       postRecord.save(function(err) {
-        Twitter.postTweet(post.url, post.title,
+        Twitter.postTweet(sub, post.url, post.title,
           function(error, data, response) {}
         );
       });
@@ -33,7 +33,7 @@ function postTweet(post) {
 function postSub(sub) {
   Reddit.getPosts(sub, function(error, posts) {
     _(posts).forEach(function(post) {
-      postTweet(post);
+      postTweet(sub, post);
     });
   });
 }
@@ -44,4 +44,4 @@ function postTweets() {
   });
 }
 
-setInterval(postTweets, 60 * 10);
+setInterval(postTweets, 60 * 5);
