@@ -32,7 +32,8 @@ function postTweet(sub, post) {
 
 function postSub(sub) {
   Reddit.getPosts(sub, function(error, posts) {
-    _(_.uniq(posts)).forEach(function(post) {
+    posts = _.uniq(posts);
+    _(posts).forEach(function(post) {
       postTweet(sub, post);
     });
   });
