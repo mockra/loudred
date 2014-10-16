@@ -10,7 +10,7 @@ mongoose.connection.on('error', function() {
 });
 
 var subreddits = ['globaloffensive', 'games', 'programming',
-                  'node', 'ruby', 'rails', 'javascript'];
+                  'node', 'ruby', 'rails', 'javascript', 'emberjs'];
 
 function postTweet(sub, post) {
   Post.findOne({ name: post.name }, function(err, record) {
