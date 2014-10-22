@@ -17,7 +17,7 @@ var subreddits = [
   { name: 'rails', limit: 1 },
   { name: 'javascript', limit: 2 },
   { name: 'emberjs', limit: 1 },
-  { name: 'games', limit: 10 }
+  { name: 'games', limit: 4 }
 ]
 
 function postTweet(sub, post) {
