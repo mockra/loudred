@@ -9,8 +9,16 @@ mongoose.connection.on('error', function() {
   console.error('✗ MongoDB Connection Error. Please make sure MongoDB is running.');
 });
 
-var subreddits = ['globaloffensive', 'games', 'programming',
-                  'node', 'ruby', 'rails', 'javascript', 'emberjs'];
+var subreddits = [
+  { name: 'globaloffensive', limit: 1 },
+  { name: 'programming', limit: 2 },
+  { name: 'node', limit: 2 },
+  { name: 'ruby', limit: 1 },
+  { name: 'rails', limit: 1 },
+  { name: 'javascript', limit: 2 },
+  { name: 'emberjs', limit: 1 },
+  { name: 'games', limit: 10 }
+]
 
 function postTweet(sub, post) {
   Post.findOne({ name: post.name }, function(err, record) {
@@ -30,8 +38,8 @@ function postTweet(sub, post) {
   });
 }
 
-function postSub(sub) {
-  Reddit.getPosts(sub, function(error, posts) {
+function postSub(sub, limit) {
+  Reddit.getPosts(sub, limit, function(error, posts) {
     posts = _.uniq(posts);
     _(posts).forEach(function(post) {
       postTweet(sub, post);
@@ -41,7 +49,7 @@ function postSub(sub) {
 
 function postTweets() {
   _(subreddits).forEach(function(sub) {
-    postSub(sub);
+    postSub(sub.name, sub.limit);
   });
 }
 
