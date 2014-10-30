@@ -10,15 +10,13 @@ mongoose.connection.on('error', function() {
 });
 
 var subreddits = [
-  { name: 'globaloffensive', limit: 1 },
   { name: 'programming', limit: 2 },
   { name: 'node', limit: 2 },
   { name: 'ruby', limit: 1 },
   { name: 'rails', limit: 1 },
   { name: 'javascript', limit: 2 },
   { name: 'emberjs', limit: 1 },
-  { name: 'games', limit: 2 },
-  { name: 'ps4', limit: 1 }
+  { name: 'games', limit: 2 }
 ]
 
 function postTweet(sub, post) {
