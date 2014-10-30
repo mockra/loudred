@@ -17,7 +17,7 @@ var subreddits = [
   { name: 'rails', limit: 1 },
   { name: 'javascript', limit: 2 },
   { name: 'emberjs', limit: 1 },
-  { name: 'games', limit: 4 },
+  { name: 'games', limit: 2 },
   { name: 'ps4', limit: 1 }
 ]
 
