@@ -10,18 +10,12 @@ mongoose.connection.on('error', function() {
 });
 
 var subreddits = [
-  { name: 'clojure', limit: 1 },
-  { name: 'elixir', limit: 1 },
   { name: 'emberjs', limit: 1 },
-  { name: 'games', limit: 1 },
   { name: 'javascript', limit: 2 },
   { name: 'node', limit: 2 },
-  { name: 'programming', limit: 2 },
+  { name: 'programming', limit: 1 },
   { name: 'rails', limit: 1 },
-  { name: 'ruby', limit: 1 },
-  { name: 'rust', limit: 1 },
-  { name: 'webdev', limit: 1 },
-  { name: 'wow', limit: 1 }
+  { name: 'ruby', limit: 1 }
 ]
 
 function postTweet(sub, post) {
