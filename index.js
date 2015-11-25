@@ -11,9 +11,11 @@ mongoose.connection.on('error', function() {
 
 var subreddits = [
   { name: 'emberjs', limit: 1 },
+  { name: 'elixir', limit: 1 },
   { name: 'games', limit: 1 },
   { name: 'globaloffensive', limit: 1 },
   { name: 'javascript', limit: 2 },
+  { name: 'leagueoflegends', limit: 1 },
   { name: 'node', limit: 2 },
   { name: 'programming', limit: 1 },
   { name: 'rails', limit: 1 },
