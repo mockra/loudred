@@ -10,6 +10,7 @@ mongoose.connection.on('error', function() {
 });
 
 var subreddits = [
+  { name: 'competitivehs', limit: 1 },
   { name: 'emberjs', limit: 1 },
   { name: 'elixir', limit: 1 },
   { name: 'games', limit: 1 },
