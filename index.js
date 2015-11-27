@@ -19,6 +19,7 @@ var subreddits = [
   { name: 'leagueoflegends', limit: 1 },
   { name: 'node', limit: 2 },
   { name: 'programming', limit: 1 },
+  { name: 'ps4', limit: 1 },
   { name: 'rails', limit: 1 },
   { name: 'ruby', limit: 1 },
   { name: 'streetfighter', limit: 1 }
