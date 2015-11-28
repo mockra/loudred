@@ -13,7 +13,7 @@ var subreddits = [
   { name: 'competitivehs', limit: 1 },
   { name: 'emberjs', limit: 1 },
   { name: 'elixir', limit: 1 },
-  { name: 'games', limit: 1 },
+  { name: 'games', limit: 2 },
   { name: 'globaloffensive', limit: 1 },
   { name: 'javascript', limit: 2 },
   { name: 'leagueoflegends', limit: 1 },
