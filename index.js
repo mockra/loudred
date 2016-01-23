@@ -12,7 +12,6 @@ mongoose.connection.on('error', function() {
 var subreddits = [
   { name: 'emberjs', limit: 1 },
   { name: 'elixir', limit: 1 },
-  { name: 'games', limit: 2 },
   { name: 'javascript', limit: 2 },
   { name: 'node', limit: 2 },
   { name: 'programming', limit: 1 },
