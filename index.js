@@ -13,7 +13,7 @@ var subreddits = [
   { name: 'emberjs', limit: 1 },
   { name: 'elixir', limit: 1 },
   { name: 'elm', limit: 1 },
-  { name: 'games', limit: 1 },
+  { name: 'games', limit: 2 },
   { name: 'javascript', limit: 2 },
   { name: 'leagueoflegends', limit: 3 },
   { name: 'node', limit: 2 },
