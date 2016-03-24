@@ -12,17 +12,15 @@ mongoose.connection.on('error', function() {
 var subreddits = [
   { name: 'emberjs', limit: 1 },
   { name: 'elixir', limit: 1 },
-  { name: 'elm', limit: 1 },
   { name: 'games', limit: 2 },
   { name: 'javascript', limit: 2 },
-  { name: 'leagueoflegends', limit: 3 },
-  { name: 'node', limit: 2 },
+  { name: 'leagueoflegends', limit: 2 },
+  { name: 'node', limit: 1 },
   { name: 'programming', limit: 1 },
   { name: 'ps4', limit: 1 },
   { name: 'rails', limit: 1 },
   { name: 'reactjs', limit: 1 },
   { name: 'ruby', limit: 1 },
-  { name: 'streetfighter', limit: 1 },
   { name: 'summonerschool', limit: 1 },
   { name: 'webdev', limit: 1 }
 ]
