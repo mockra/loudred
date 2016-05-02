@@ -21,7 +21,6 @@ var subreddits = [
   { name: 'rails', limit: 1 },
   { name: 'reactjs', limit: 1 },
   { name: 'ruby', limit: 1 },
-  { name: 'streetfighter', limit: 1 },
   { name: 'webdev', limit: 1 }
 ]
 
